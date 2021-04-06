@@ -25,11 +25,12 @@ TodoList is set of APIs to create a checklist for you.
 
 # If you plan to run this api on localhost:
 
-| File/folder                        | Description                                               |
-|------------------------------------|-----------------------------------------------------------|
-| `/config/app_config.json`          | Contains configuration parameters for the sample.         |
-| `/config/config.env`               | Contains Mongo DB connection string and the PORT number.  |
-| `app.js`                           | Main application logic resides here.                      |
+| File/folder                        | Description                                                                           |
+|------------------------------------|---------------------------------------------------------------------------------------|
+| `/config/app_config.json`          | Contains configuration parameters for the sample.                                     |
+| `/config/config.env`               | Contains Mongo DB connection string and the PORT number. Create this file if missing  |
+| `app.js`                           | Main application logic resides here.                                                  |
+
 
 ## Note:
 :warning:  This api uses MongoDB Atlas to store the ToDo List items. MongoDB Atlas provides an easy way to host and manage your data in the cloud. Please refer to the following [URL](https://docs.atlas.mongodb.com/getting-started/) for more details on creating an Atlas cluster, connecting to it, inserting data, and querying data. 
@@ -48,14 +49,14 @@ TodoList is set of APIs to create a checklist for you.
 ## Available Methods and Endpoints:
 
 | METHOD    |    ENDPOINTS                          |    DESCRIPTION
-------------|---------------------------------------|--------------------------------------------------------------------|
-| `GET` 	|	`/user`								|   Shows the details of the user who is trying to access this api.  |
-| `GET` 	|	`/items`							|	Shows the welcome message with username.                         |
-| `GET` 	|	`/items/getitems`  					|   Lists all todo-list items created by the user.                   |                
-| `GET`		|	`/items/<title>`					|	Lists the item with specific title.                              |
-| `POST` 	|	`/items/additem`					|	Adds todo-list item.                                             |
-| `DELETE`	|	`/items/deleteitem/<title>`			|   Deletes the specific item.                                       |
-| `PATCH`	|	`/items/upadtetitle/<title>`		|	Updates the title.                                               |
+------------|---------------------------------------|--------------------------------------------------------------------------------|
+| `GET` 	|	`/user`					|   Shows the details of the user who is trying to access this api.  |
+| `GET` 	|	`/items`				|	Shows the welcome message with username.                     |
+| `GET` 	|	`/items/getitems`  			|   Lists all todo-list items created by the user.                   |                
+| `GET`		|	`/items/<title>`			|	Lists the item with specific title.                          |
+| `POST` 	|	`/items/additem`			|	Adds todo-list item.                                         |
+| `DELETE`	|	`/items/deleteitem/<title>`		|   Deletes the specific item.                                       |
+| `PATCH`	|	`/items/upadtetitle/<title>`		|	Updates the title.                                           |
 | `PATCH`	|	`/items/upadtedescription/<title>`	|   Updates the description.                                         |
 | `PATCH`	|	`/items/upadteisComplete/<title>`	|   Sets the isComplete status to either true or false.              |
 
