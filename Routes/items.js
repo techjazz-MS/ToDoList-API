@@ -99,7 +99,7 @@ router.patch('/updateDescription/:title', passport.authenticate('oauth-bearer', 
         if(!item) throw Error('ToDo item not found!!');
         res.status(200).json(updatedItem); 
     }catch(err){
-        res.status(400).json({message: err});
+        res.status(400).json({message: err}); 
     }
 });
 

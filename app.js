@@ -35,7 +35,7 @@ const db = process.env.MONGO_URI;
 //Connect to MongoDB
 mongoose.connect(db, { useNewUrlParser: true , useUnifiedTopology: true })
         .then(() => console.log('Connected to DB successfully.....'))
-        .catch((err) => console.log(err));
+        .catch((err) => console.log(err)); 
 
 //Middlewares
 app.use(cors());

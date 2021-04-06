@@ -44,7 +44,7 @@ TodoList is set of APIs to create a checklist for you.
 ```
 
 ## Available Scopes:
-`access_as_user`
+`access_as_user` 
 
 ## Available Methods and Endpoints:
 
