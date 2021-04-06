@@ -39,7 +39,7 @@ TodoList is set of APIs to create a checklist for you.
 ```console
     cd nodejs-todo-api
     npm install
-	npm run start-dev
+    npm run start-dev
 ```
 
 ## Available Scopes:

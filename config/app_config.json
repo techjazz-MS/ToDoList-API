@@ -5,7 +5,7 @@
         "audience": "175cbbb7-8c88-4863-92dc-22db73b2b4fe"
     },
     "resource": {
-        "scope": ["access_as_user"]
+        "scope": ["access_as_user"] 
     },
     "metadata": {
         "authority": "login.microsoftonline.com",
